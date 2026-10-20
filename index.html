@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Tetralogy: a shared study tracker for the Mad Lock-in revision period.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#150f45">
+<title>Tetralogy · Mad Lock-in Study Tracker</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📚%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="hero">
+  <small>THE STUDY TEAM</small>
+  <h1>TETRALOGY</h1>
+  <h2>Mad Lock-in Study Tracker</h2>
+</header>
+
+<main class="wrap">
+  <div class="who" id="who" role="group" aria-label="Choose who to track"></div>
+  <div class="tabs" id="tabs" role="tablist" aria-label="Sections"></div>
+  <div class="status" id="status" role="status" aria-live="polite"></div>
+  <div class="celebration" id="celebration" role="status" aria-live="polite"></div>
+  <div id="app"></div>
+  <footer class="foot">With God, all things are possible.</footer>
+  <noscript><div class="card">This tracker needs JavaScript to run. Please enable it and reload.</div></noscript>
+</main>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+<script defer src="scripts.js"></script>
+</body>
+</html>
