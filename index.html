@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Tetralogy: a shared study planner for focused medical-school revision.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#17133d">
+  <meta name="supabase-url" content="https://byiwzaifrwgsogkqlpdv.supabase.co">
+  <meta name="supabase-anon-key" content="sb_publishable_Es286AHEpe_mPsVQNzNBIg_ohdmKKKv">
+  <title>Tetralogy · Mad Lock-in Study Tracker</title>
+  <link rel="icon" type="image/svg+xml" href="tetralogy-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.min.js"></script>
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to your study space</a>
+  <header class="hero">
+    <div class="hero-inner">
+      <a class="brand" href="#" aria-label="Tetralogy home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span class="brand-copy"><small>THE STUDY TEAM</small><strong>TETRALOGY</strong><em>Mad Lock-in Study Tracker</em></span>
+      </a>
+      <div id="header-actions" class="header-actions"></div>
+    </div>
+  </header>
+
+  <main id="main-content" class="wrap">
+    <section id="auth-panel" class="auth-panel card" aria-labelledby="auth-title" hidden>
+      <div class="auth-intro">
+        <p class="eyebrow">FOCUS TOGETHER · OWN YOUR PLAN</p>
+        <h1 id="auth-title">Your study space, in sync.</h1>
+        <p>Sign in to track your work. Group progress stays visible; your plan remains yours to edit.</p>
+      </div>
+      <div class="auth-switch" role="tablist" aria-label="Account access">
+        <button type="button" class="auth-tab is-active" role="tab" aria-selected="true" data-auth-mode="login">Sign in</button>
+        <button type="button" class="auth-tab" role="tab" aria-selected="false" data-auth-mode="register">Join the group</button>
+      </div>
+      <form id="login-form" class="form-stack" autocomplete="on">
+        <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+        <label>Password<input name="password" type="password" autocomplete="current-password" minlength="8" required></label>
+        <button class="button button-primary" type="submit">Sign in</button>
+        <button class="text-button" type="button" data-action="forgot-password">Forgot your password?</button>
+      </form>
+      <form id="register-form" class="form-stack" autocomplete="on" hidden>
+        <p class="callout">Join with the private group invitation code and choose your Tetralogy password. Original members claim their old records after verifying their email.</p>
+        <label>Display name<input name="display_name" type="text" autocomplete="name" minlength="1" maxlength="80" required></label>
+        <label>Email address<input name="email" type="email" autocomplete="email" maxlength="254" required></label>
+        <label>Group invitation code<input name="invite_code" type="password" autocomplete="off" minlength="12" maxlength="200" required></label>
+        <label>Password<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <label>Confirm password<input name="confirm_password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <button class="button button-primary" type="submit">Send verification email</button>
+        <p class="field-help">Choose this password now. Verify your email from the link before signing in or claiming old progress.</p>
+      </form>
+      <form id="new-password-form" class="form-stack" hidden>
+        <p id="password-flow-copy" class="callout">Choose a new password to continue.</p>
+        <label>New password<input name="password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <label>Confirm password<input name="confirm_password" type="password" autocomplete="new-password" minlength="8" required></label>
+        <button class="button button-primary" type="submit">Save password</button>
+      </form>
+      <div id="auth-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="app-shell" hidden aria-label="Tetralogy study tracker">
+      <div id="status" class="status" role="status" aria-live="polite" hidden></div>
+      <div id="app"></div>
+    </section>
+    <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    <dialog id="app-dialog" class="app-dialog" aria-labelledby="dialog-title">
+      <div class="dialog-head"><div><p class="eyebrow">TETRALOGY</p><h2 id="dialog-title">Study action</h2></div><button class="icon-button" type="button" data-action="close-dialog" aria-label="Close dialog">×</button></div>
+      <div id="dialog-content"></div>
+    </dialog>
+  </main>
+  <footer class="foot"><span>With God, all things are possible.</span><span>Built for the lock-in, made for the long run.</span></footer>
+  <noscript><div class="noscript card">This tracker needs JavaScript to run. Enable JavaScript and reload.</div></noscript>
+</body>
+</html>
