@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Tetralogy four-book study mark</title>
+  <rect x="4" y="4" width="120" height="120" rx="30" fill="#17133d"/>
+  <path d="M23 40c14-8 27-5 41 4v47c-14-9-27-12-41-4z" fill="#241764" stroke="#78e0d2" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M105 40c-14-8-27-5-41 4v47c14-9 27-12 41-4z" fill="#241764" stroke="#78e0d2" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M23 52c14-8 27-5 41 4M23 67c14-8 27-5 41 4M105 52c-14-8-27-5-41 4M105 67c-14-8-27-5-41 4" fill="none" stroke="#f1c96f" stroke-width="3" stroke-linecap="round"/>
+  <path d="M64 44v48" stroke="#f1c96f" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="64" cy="27" r="5" fill="#f1c96f"/>
+</svg>
