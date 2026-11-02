@@ -1,0 +1,17 @@
+{
+  "name": "Tetralogy · Mad Lock-in Study Tracker",
+  "short_name": "Tetralogy",
+  "description": "A shared study planner for focused medical-school revision.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0e0d1b",
+  "theme_color": "#17133d",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "tetralogy-mark.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
